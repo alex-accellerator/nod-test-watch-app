@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A053D491B2A3848006337E1 /* CustomTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A053D481B2A3848006337E1 /* CustomTableRow.m */; };
 		6A5FE4B21B2A2B23006DAFE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FE4B11B2A2B23006DAFE8 /* main.m */; };
 		6A5FE4B51B2A2B23006DAFE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FE4B41B2A2B23006DAFE8 /* AppDelegate.m */; };
-		6A5FE4B81B2A2B23006DAFE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FE4B71B2A2B23006DAFE8 /* ViewController.m */; };
 		6A5FE4BB1B2A2B23006DAFE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FE4B91B2A2B23006DAFE8 /* Main.storyboard */; };
 		6A5FE4BD1B2A2B23006DAFE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FE4BC1B2A2B23006DAFE8 /* Assets.xcassets */; };
 		6A5FE4C01B2A2B23006DAFE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FE4BE1B2A2B23006DAFE8 /* LaunchScreen.storyboard */; };
@@ -17,11 +17,14 @@
 		6A5FE4CB1B2A2B23006DAFE8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FE4C91B2A2B23006DAFE8 /* Interface.storyboard */; };
 		6A5FE4CD1B2A2B23006DAFE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FE4CC1B2A2B23006DAFE8 /* Assets.xcassets */; };
 		6A5FE4D41B2A2B24006DAFE8 /* NodWatchTestApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6A5FE4D31B2A2B24006DAFE8 /* NodWatchTestApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		6A5FE4DC1B2A2B24006DAFE8 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FE4DB1B2A2B24006DAFE8 /* InterfaceController.m */; };
 		6A5FE4DF1B2A2B24006DAFE8 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FE4DE1B2A2B24006DAFE8 /* ExtensionDelegate.m */; };
-		6A5FE4E21B2A2B24006DAFE8 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FE4E11B2A2B24006DAFE8 /* NotificationController.m */; };
 		6A5FE4E51B2A2B24006DAFE8 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FE4E41B2A2B24006DAFE8 /* GlanceController.m */; };
 		6A5FE4E71B2A2B24006DAFE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FE4E61B2A2B24006DAFE8 /* Assets.xcassets */; };
+		6A5FE4FE1B2A2C15006DAFE8 /* NodMainInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FE4FD1B2A2C15006DAFE8 /* NodMainInterfaceController.m */; };
+		6A5FE5011B2A2C24006DAFE8 /* NodResponseInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FE5001B2A2C24006DAFE8 /* NodResponseInterfaceController.m */; };
+		6A97A4CC1B2A4A5E00F85550 /* NodMessageInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A97A4CB1B2A4A5E00F85550 /* NodMessageInterfaceController.m */; };
+		6AB9301D1B2A53260020EB29 /* NodMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB9301C1B2A53260020EB29 /* NodMessageTableViewController.m */; };
+		6AB930201B2A66CE0020EB29 /* NodNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB9301F1B2A66CE0020EB29 /* NodNotificationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,12 +70,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6A053D471B2A3848006337E1 /* CustomTableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableRow.h; sourceTree = "<group>"; };
+		6A053D481B2A3848006337E1 /* CustomTableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableRow.m; sourceTree = "<group>"; };
 		6A5FE4AD1B2A2B23006DAFE8 /* NodWatchTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NodWatchTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5FE4B11B2A2B23006DAFE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A5FE4B31B2A2B23006DAFE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6A5FE4B41B2A2B23006DAFE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6A5FE4B61B2A2B23006DAFE8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6A5FE4B71B2A2B23006DAFE8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6A5FE4BA1B2A2B23006DAFE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A5FE4BC1B2A2B23006DAFE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A5FE4BF1B2A2B23006DAFE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,16 +86,22 @@
 		6A5FE4CE1B2A2B23006DAFE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A5FE4D31B2A2B24006DAFE8 /* NodWatchTestApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NodWatchTestApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5FE4D91B2A2B24006DAFE8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		6A5FE4DA1B2A2B24006DAFE8 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
-		6A5FE4DB1B2A2B24006DAFE8 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
 		6A5FE4DD1B2A2B24006DAFE8 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
 		6A5FE4DE1B2A2B24006DAFE8 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
-		6A5FE4E01B2A2B24006DAFE8 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
-		6A5FE4E11B2A2B24006DAFE8 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		6A5FE4E31B2A2B24006DAFE8 /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
 		6A5FE4E41B2A2B24006DAFE8 /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
 		6A5FE4E61B2A2B24006DAFE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A5FE4E81B2A2B24006DAFE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A5FE4FC1B2A2C15006DAFE8 /* NodMainInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodMainInterfaceController.h; sourceTree = "<group>"; };
+		6A5FE4FD1B2A2C15006DAFE8 /* NodMainInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodMainInterfaceController.m; sourceTree = "<group>"; };
+		6A5FE4FF1B2A2C24006DAFE8 /* NodResponseInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodResponseInterfaceController.h; sourceTree = "<group>"; };
+		6A5FE5001B2A2C24006DAFE8 /* NodResponseInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodResponseInterfaceController.m; sourceTree = "<group>"; };
+		6A97A4CA1B2A4A5E00F85550 /* NodMessageInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodMessageInterfaceController.h; sourceTree = "<group>"; };
+		6A97A4CB1B2A4A5E00F85550 /* NodMessageInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodMessageInterfaceController.m; sourceTree = "<group>"; };
+		6AB9301B1B2A53260020EB29 /* NodMessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodMessageTableViewController.h; sourceTree = "<group>"; };
+		6AB9301C1B2A53260020EB29 /* NodMessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodMessageTableViewController.m; sourceTree = "<group>"; };
+		6AB9301E1B2A66CE0020EB29 /* NodNotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodNotificationController.h; sourceTree = "<group>"; };
+		6AB9301F1B2A66CE0020EB29 /* NodNotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodNotificationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +122,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A053D3B1B2A36A8006337E1 /* Interface Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A5FE4FC1B2A2C15006DAFE8 /* NodMainInterfaceController.h */,
+				6A5FE4FD1B2A2C15006DAFE8 /* NodMainInterfaceController.m */,
+				6A97A4CA1B2A4A5E00F85550 /* NodMessageInterfaceController.h */,
+				6A97A4CB1B2A4A5E00F85550 /* NodMessageInterfaceController.m */,
+				6A5FE4FF1B2A2C24006DAFE8 /* NodResponseInterfaceController.h */,
+				6A5FE5001B2A2C24006DAFE8 /* NodResponseInterfaceController.m */,
+				6AB9301E1B2A66CE0020EB29 /* NodNotificationController.h */,
+				6AB9301F1B2A66CE0020EB29 /* NodNotificationController.m */,
+				6A5FE4E31B2A2B24006DAFE8 /* GlanceController.h */,
+				6A5FE4E41B2A2B24006DAFE8 /* GlanceController.m */,
+			);
+			name = "Interface Controllers";
+			sourceTree = "<group>";
+		};
+		6A053D401B2A37E1006337E1 /* Table Rows */ = {
+			isa = PBXGroup;
+			children = (
+				6A053D471B2A3848006337E1 /* CustomTableRow.h */,
+				6A053D481B2A3848006337E1 /* CustomTableRow.m */,
+			);
+			name = "Table Rows";
+			sourceTree = "<group>";
+		};
 		6A5FE4A41B2A2B23006DAFE8 = {
 			isa = PBXGroup;
 			children = (
@@ -138,8 +173,8 @@
 			children = (
 				6A5FE4B31B2A2B23006DAFE8 /* AppDelegate.h */,
 				6A5FE4B41B2A2B23006DAFE8 /* AppDelegate.m */,
-				6A5FE4B61B2A2B23006DAFE8 /* ViewController.h */,
-				6A5FE4B71B2A2B23006DAFE8 /* ViewController.m */,
+				6AB9301B1B2A53260020EB29 /* NodMessageTableViewController.h */,
+				6AB9301C1B2A53260020EB29 /* NodMessageTableViewController.m */,
 				6A5FE4B91B2A2B23006DAFE8 /* Main.storyboard */,
 				6A5FE4BC1B2A2B23006DAFE8 /* Assets.xcassets */,
 				6A5FE4BE1B2A2B23006DAFE8 /* LaunchScreen.storyboard */,
@@ -170,14 +205,10 @@
 		6A5FE4D71B2A2B24006DAFE8 /* NodWatchTestApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				6A5FE4DA1B2A2B24006DAFE8 /* InterfaceController.h */,
-				6A5FE4DB1B2A2B24006DAFE8 /* InterfaceController.m */,
+				6A053D401B2A37E1006337E1 /* Table Rows */,
+				6A053D3B1B2A36A8006337E1 /* Interface Controllers */,
 				6A5FE4DD1B2A2B24006DAFE8 /* ExtensionDelegate.h */,
 				6A5FE4DE1B2A2B24006DAFE8 /* ExtensionDelegate.m */,
-				6A5FE4E01B2A2B24006DAFE8 /* NotificationController.h */,
-				6A5FE4E11B2A2B24006DAFE8 /* NotificationController.m */,
-				6A5FE4E31B2A2B24006DAFE8 /* GlanceController.h */,
-				6A5FE4E41B2A2B24006DAFE8 /* GlanceController.m */,
 				6A5FE4E61B2A2B24006DAFE8 /* Assets.xcassets */,
 				6A5FE4E81B2A2B24006DAFE8 /* Info.plist */,
 				6A5FE4D81B2A2B24006DAFE8 /* Supporting Files */,
@@ -324,8 +355,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A5FE4B81B2A2B23006DAFE8 /* ViewController.m in Sources */,
 				6A5FE4B51B2A2B23006DAFE8 /* AppDelegate.m in Sources */,
+				6AB9301D1B2A53260020EB29 /* NodMessageTableViewController.m in Sources */,
 				6A5FE4B21B2A2B23006DAFE8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,9 +365,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A5FE5011B2A2C24006DAFE8 /* NodResponseInterfaceController.m in Sources */,
 				6A5FE4DF1B2A2B24006DAFE8 /* ExtensionDelegate.m in Sources */,
-				6A5FE4DC1B2A2B24006DAFE8 /* InterfaceController.m in Sources */,
-				6A5FE4E21B2A2B24006DAFE8 /* NotificationController.m in Sources */,
+				6AB930201B2A66CE0020EB29 /* NodNotificationController.m in Sources */,
+				6A5FE4FE1B2A2C15006DAFE8 /* NodMainInterfaceController.m in Sources */,
+				6A97A4CC1B2A4A5E00F85550 /* NodMessageInterfaceController.m in Sources */,
+				6A053D491B2A3848006337E1 /* CustomTableRow.m in Sources */,
 				6A5FE4E51B2A2B24006DAFE8 /* GlanceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,6 +603,7 @@
 				6A5FE4ED1B2A2B24006DAFE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A5FE4EF1B2A2B24006DAFE8 /* Build configuration list for PBXNativeTarget "NodWatchTestApp WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -577,6 +612,7 @@
 				6A5FE4F11B2A2B24006DAFE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A5FE4F31B2A2B24006DAFE8 /* Build configuration list for PBXNativeTarget "NodWatchTestApp" */ = {
 			isa = XCConfigurationList;
@@ -585,6 +621,7 @@
 				6A5FE4F51B2A2B24006DAFE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

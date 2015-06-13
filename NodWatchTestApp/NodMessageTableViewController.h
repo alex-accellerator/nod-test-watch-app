@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NodMessageTableViewController.h
 //  NodWatchTestApp
 //
 //  Created by Nam Kim on 6/11/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface NodMessageTableViewController : UITableViewController
 
 @end
-

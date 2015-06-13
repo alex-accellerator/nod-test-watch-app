@@ -1,21 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc" defaultGlanceController="0uZ-2p-rRc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8066.14"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Nod Main Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider=""/>
+                <controller id="AgC-eL-Hgc" customClass="NodMainInterfaceController">
+                    <items>
+                        <label alignment="center" text="Recent Messages" textAlignment="center" id="Q96-cC-I7O"/>
+                        <table alignment="left" id="V0M-3k-zaI">
+                            <items>
+                                <tableRow identifier="CustomTableRow" id="cHF-VA-V5d" customClass="CustomTableRow">
+                                    <group key="rootItem" width="1" alignment="left" id="vY6-Ss-UeZ">
+                                        <items>
+                                            <imageView width="35" height="35" alignment="left" verticalAlignment="center" id="LQu-cR-QQe"/>
+                                            <label alignment="left" verticalAlignment="center" text="Message" id="HOW-gh-VO8"/>
+                                        </items>
+                                        <connections>
+                                            <segue destination="R5P-Wf-sf1" kind="push" identifier="MessageSegue" id="dCP-7B-RqN"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowImage" destination="LQu-cR-QQe" id="Jwr-EC-sxC"/>
+                                        <outlet property="rowText" destination="HOW-gh-VO8" id="NlS-xU-Fzo"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="messageTable" destination="V0M-3k-zaI" id="sSS-og-OFM"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Nod Message Interface Controller-->
+        <scene sceneID="jRT-Kh-MvQ">
+            <objects>
+                <controller hidesWhenLoading="NO" id="R5P-Wf-sf1" customClass="NodMessageInterfaceController">
+                    <items>
+                        <label alignment="center" text="Message" id="3Tz-Dv-Fnc"/>
+                        <label alignment="center" text="Name" textAlignment="center" id="5sZ-rh-mWn"/>
+                        <label alignment="center" text="Message itself" textAlignment="center" numberOfLines="0" id="Gzg-Nq-OM4"/>
+                        <button width="1" alignment="left" title="Reply" id="ahW-iB-RWp">
+                            <connections>
+                                <segue destination="oxm-0f-k6I" kind="push" identifier="ResponseSegue" id="Gfy-65-iNQ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="messageLabel" destination="Gzg-Nq-OM4" id="pTj-c5-Ir0"/>
+                        <outlet property="nameLabel" destination="5sZ-rh-mWn" id="7gZ-Xv-5Hg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="434" y="347"/>
+        </scene>
+        <!--Nod Response Interface Controller-->
+        <scene sceneID="jMr-70-sof">
+            <objects>
+                <controller hidesWhenLoading="NO" id="oxm-0f-k6I" customClass="NodResponseInterfaceController">
+                    <items>
+                        <label alignment="center" text="Send Message" id="T2m-fH-Uo3"/>
+                        <button width="1" alignment="left" title="Text" id="afR-gp-4fX">
+                            <connections>
+                                <action selector="sendTextMessage" destination="oxm-0f-k6I" id="tea-bB-zxY"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Nod" id="OaD-Pe-PQn">
+                            <connections>
+                                <action selector="sendNodMessage" destination="oxm-0f-k6I" id="Jfr-ZM-cNg"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="632" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModuleProvider="">
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController">
                     <items>
                         <group alignment="left" id="t8f-Gd-c4y"/>
                         <group alignment="left" id="uCw-4Q-Ouw"/>
@@ -41,10 +110,10 @@
             </objects>
             <point key="canvasLocation" x="235" y="1001"/>
         </scene>
-        <!--Notification Controller-->
+        <!--Nod Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
-                <controller id="gdX-wl-uQE" customClass="NotificationController" customModuleProvider=""/>
+                <controller id="gdX-wl-uQE" customClass="NodNotificationController"/>
             </objects>
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>
