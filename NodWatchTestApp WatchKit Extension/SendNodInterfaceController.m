@@ -7,58 +7,47 @@
 //
 
 #import "SendNodInterfaceController.h"
+#import "NodTableRow.h"
 
 @interface SendNodInterfaceController ()
-@property (unsafe_unretained, nonatomic) IBOutlet WKInterfacePicker *nodPicker;
-@property (strong, nonatomic) NSMutableArray *pickerItems;
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceTable *nodTable;
 @end
 
 @implementation SendNodInterfaceController
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
+    [self loadTableData];
 }
 
 - (void)willActivate {
     [super willActivate];
-    [self loadPopularNods];
 }
 
-- (void)loadPopularNods {
-    [self buildPopularNodArray];
-    [self.nodPicker setItems: self.pickerItems];
-}
-
-
-
-- (IBAction)itemSelectedAtIndex:(NSInteger)value {
-    NSLog(@"%i", value);
-}
-
-- (void)buildPopularNodArray {
-    WKPickerItem *pickerItem1 = [[WKPickerItem alloc] init];
-    pickerItem1.contentImage = [WKImage imageWithImageName:@"LOL"];
-    [self.pickerItems addObject:pickerItem1];
+- (void)loadTableData {
+    [self.nodTable setNumberOfRows:6 withRowType:@"NodTableRow"];
     
-    WKPickerItem *pickerItem2 = [[WKPickerItem alloc] init];
-    pickerItem2.contentImage = [WKImage imageWithImageName:@"Wink"];
-    [self.pickerItems addObject:pickerItem2];
-    
-    WKPickerItem *pickerItem3 = [[WKPickerItem alloc] init];
-    pickerItem3.contentImage = [WKImage imageWithImageName:@"Worried"];
-    [self.pickerItems addObject:pickerItem3];
+    NodTableRow *row0 = [self.nodTable rowControllerAtIndex:0];
+    [row0.nodImage setImageNamed:@"FacePalm"];
+    NodTableRow *row1 = [self.nodTable rowControllerAtIndex:1];
+    [row1.nodImage setImageNamed:@"LOL"];
+    NodTableRow *row2 = [self.nodTable rowControllerAtIndex:2];
+    [row2.nodImage setImageNamed:@"Thinking"];
+    NodTableRow *row3 = [self.nodTable rowControllerAtIndex:3];
+    [row3.nodImage setImageNamed:@"Tongue"];
+    NodTableRow *row4 = [self.nodTable rowControllerAtIndex:4];
+    [row4.nodImage setImageNamed:@"Wink"];
+    NodTableRow *row5 = [self.nodTable rowControllerAtIndex:5];
+    [row5.nodImage setImageNamed:@"Worried"];
 }
 
-- (NSMutableArray *)pickerItems {
-    if (!_pickerItems) {
-        _pickerItems = [[NSMutableArray alloc] init];
+// Segue
+- (id)contextForSegueWithIdentifier:(nonnull NSString *)segueIdentifier inTable:(nonnull WKInterfaceTable *)table rowIndex:(NSInteger)rowIndex {
+    if ([segueIdentifier isEqualToString:@"SendNodSegue"]) {
+        return nil;
     }
-    return _pickerItems;
-}
-
-- (void)didDeactivate {
-    // This method is called when watch view controller is no longer visible
-    [super didDeactivate];
+    
+    return nil;
 }
 
 @end

@@ -24,6 +24,7 @@
 		6A5FE4FE1B2A2C15006DAFE8 /* NodMainInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FE4FD1B2A2C15006DAFE8 /* NodMainInterfaceController.m */; };
 		6A5FE5011B2A2C24006DAFE8 /* NodResponseInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FE5001B2A2C24006DAFE8 /* NodResponseInterfaceController.m */; };
 		6A6CBED41B2CD8BD002C1226 /* SendingNodInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6CBED31B2CD8BD002C1226 /* SendingNodInterfaceController.m */; };
+		6A6CBEDB1B2CDE37002C1226 /* NodTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6CBEDA1B2CDE37002C1226 /* NodTableRow.m */; };
 		6A97A4CC1B2A4A5E00F85550 /* NodMessageInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A97A4CB1B2A4A5E00F85550 /* NodMessageInterfaceController.m */; };
 		6AB9301D1B2A53260020EB29 /* NodMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB9301C1B2A53260020EB29 /* NodMessageTableViewController.m */; };
 		6AB930201B2A66CE0020EB29 /* NodNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB9301F1B2A66CE0020EB29 /* NodNotificationController.m */; };
@@ -102,6 +103,8 @@
 		6A5FE5001B2A2C24006DAFE8 /* NodResponseInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodResponseInterfaceController.m; sourceTree = "<group>"; };
 		6A6CBED21B2CD8BD002C1226 /* SendingNodInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendingNodInterfaceController.h; sourceTree = "<group>"; };
 		6A6CBED31B2CD8BD002C1226 /* SendingNodInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendingNodInterfaceController.m; sourceTree = "<group>"; };
+		6A6CBED91B2CDE37002C1226 /* NodTableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodTableRow.h; sourceTree = "<group>"; };
+		6A6CBEDA1B2CDE37002C1226 /* NodTableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodTableRow.m; sourceTree = "<group>"; };
 		6A97A4CA1B2A4A5E00F85550 /* NodMessageInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodMessageInterfaceController.h; sourceTree = "<group>"; };
 		6A97A4CB1B2A4A5E00F85550 /* NodMessageInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodMessageInterfaceController.m; sourceTree = "<group>"; };
 		6AB9301B1B2A53260020EB29 /* NodMessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodMessageTableViewController.h; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 			children = (
 				6A053D471B2A3848006337E1 /* CustomTableRow.h */,
 				6A053D481B2A3848006337E1 /* CustomTableRow.m */,
+				6A6CBED91B2CDE37002C1226 /* NodTableRow.h */,
+				6A6CBEDA1B2CDE37002C1226 /* NodTableRow.m */,
 			);
 			name = "Table Rows";
 			sourceTree = "<group>";
@@ -384,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A5FE5011B2A2C24006DAFE8 /* NodResponseInterfaceController.m in Sources */,
+				6A6CBEDB1B2CDE37002C1226 /* NodTableRow.m in Sources */,
 				6A5FE4DF1B2A2B24006DAFE8 /* ExtensionDelegate.m in Sources */,
 				6AB930201B2A66CE0020EB29 /* NodNotificationController.m in Sources */,
 				6A5FE4FE1B2A2C15006DAFE8 /* NodMainInterfaceController.m in Sources */,

@@ -89,19 +89,25 @@
                     <items>
                         <table alignment="left" id="t4q-ZP-qdD">
                             <items>
-                                <tableRow id="abO-7Q-N2q">
-                                    <group key="rootItem" width="1" height="90" alignment="left" id="hgO-Gb-pys">
+                                <tableRow identifier="NodTableRow" id="abO-7Q-N2q" customClass="NodTableRow">
+                                    <group key="rootItem" width="1" height="55" alignment="left" id="hgO-Gb-pys">
                                         <items>
-                                            <imageView height="93" alignment="left" id="tX2-EJ-8ig"/>
+                                            <imageView width="55" height="55" alignment="center" verticalAlignment="center" id="tX2-EJ-8ig"/>
                                         </items>
                                         <connections>
-                                            <segue destination="7wH-fX-54S" kind="modal" id="McK-0o-3kO"/>
+                                            <segue destination="7wH-fX-54S" kind="modal" identifier="SendNodSegue" id="McK-0o-3kO"/>
                                         </connections>
                                     </group>
+                                    <connections>
+                                        <outlet property="nodImage" destination="tX2-EJ-8ig" id="ouT-ss-p7I"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="nodTable" destination="t4q-ZP-qdD" id="jLl-kY-G6T"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="823" y="347"/>
