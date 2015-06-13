@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6A053D491B2A3848006337E1 /* CustomTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A053D481B2A3848006337E1 /* CustomTableRow.m */; };
+		6A0AFF951B2CA96A00F7F8F5 /* SendNodInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0AFF941B2CA96A00F7F8F5 /* SendNodInterfaceController.m */; };
 		6A5FE4B21B2A2B23006DAFE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FE4B11B2A2B23006DAFE8 /* main.m */; };
 		6A5FE4B51B2A2B23006DAFE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FE4B41B2A2B23006DAFE8 /* AppDelegate.m */; };
 		6A5FE4BB1B2A2B23006DAFE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FE4B91B2A2B23006DAFE8 /* Main.storyboard */; };
@@ -72,6 +73,8 @@
 /* Begin PBXFileReference section */
 		6A053D471B2A3848006337E1 /* CustomTableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableRow.h; sourceTree = "<group>"; };
 		6A053D481B2A3848006337E1 /* CustomTableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableRow.m; sourceTree = "<group>"; };
+		6A0AFF931B2CA96A00F7F8F5 /* SendNodInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendNodInterfaceController.h; sourceTree = "<group>"; };
+		6A0AFF941B2CA96A00F7F8F5 /* SendNodInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendNodInterfaceController.m; sourceTree = "<group>"; };
 		6A5FE4AD1B2A2B23006DAFE8 /* NodWatchTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NodWatchTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5FE4B11B2A2B23006DAFE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A5FE4B31B2A2B23006DAFE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 				6A97A4CB1B2A4A5E00F85550 /* NodMessageInterfaceController.m */,
 				6A5FE4FF1B2A2C24006DAFE8 /* NodResponseInterfaceController.h */,
 				6A5FE5001B2A2C24006DAFE8 /* NodResponseInterfaceController.m */,
+				6A0AFF931B2CA96A00F7F8F5 /* SendNodInterfaceController.h */,
+				6A0AFF941B2CA96A00F7F8F5 /* SendNodInterfaceController.m */,
 				6AB9301E1B2A66CE0020EB29 /* NodNotificationController.h */,
 				6AB9301F1B2A66CE0020EB29 /* NodNotificationController.m */,
 				6A5FE4E31B2A2B24006DAFE8 /* GlanceController.h */,
@@ -372,6 +377,7 @@
 				6A97A4CC1B2A4A5E00F85550 /* NodMessageInterfaceController.m in Sources */,
 				6A053D491B2A3848006337E1 /* CustomTableRow.m in Sources */,
 				6A5FE4E51B2A2B24006DAFE8 /* GlanceController.m in Sources */,
+				6A0AFF951B2CA96A00F7F8F5 /* SendNodInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

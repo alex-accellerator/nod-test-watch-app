@@ -74,12 +74,31 @@
                         <button width="1" alignment="left" title="Nod" id="OaD-Pe-PQn">
                             <connections>
                                 <action selector="sendNodMessage" destination="oxm-0f-k6I" id="Jfr-ZM-cNg"/>
+                                <segue destination="wsg-8P-gVs" kind="push" id="pqX-uc-t9C"/>
                             </connections>
                         </button>
                     </items>
                 </controller>
             </objects>
             <point key="canvasLocation" x="632" y="347"/>
+        </scene>
+        <!--Send Nod Interface Controller-->
+        <scene sceneID="faj-Tq-qpB">
+            <objects>
+                <controller hidesWhenLoading="NO" id="wsg-8P-gVs" customClass="SendNodInterfaceController">
+                    <items>
+                        <picker width="1" height="100" alignment="left" style="stack" id="d6w-B8-wdk">
+                            <connections>
+                                <action selector="itemSelectedAtIndex:" destination="wsg-8P-gVs" id="UIv-Wf-RLw"/>
+                            </connections>
+                        </picker>
+                    </items>
+                    <connections>
+                        <outlet property="nodPicker" destination="d6w-B8-wdk" id="7Wk-Q9-GQU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="829" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
