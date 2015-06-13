@@ -23,6 +23,7 @@
 		6A5FE4E71B2A2B24006DAFE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FE4E61B2A2B24006DAFE8 /* Assets.xcassets */; };
 		6A5FE4FE1B2A2C15006DAFE8 /* NodMainInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FE4FD1B2A2C15006DAFE8 /* NodMainInterfaceController.m */; };
 		6A5FE5011B2A2C24006DAFE8 /* NodResponseInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FE5001B2A2C24006DAFE8 /* NodResponseInterfaceController.m */; };
+		6A6CBED41B2CD8BD002C1226 /* SendingNodInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6CBED31B2CD8BD002C1226 /* SendingNodInterfaceController.m */; };
 		6A97A4CC1B2A4A5E00F85550 /* NodMessageInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A97A4CB1B2A4A5E00F85550 /* NodMessageInterfaceController.m */; };
 		6AB9301D1B2A53260020EB29 /* NodMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB9301C1B2A53260020EB29 /* NodMessageTableViewController.m */; };
 		6AB930201B2A66CE0020EB29 /* NodNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB9301F1B2A66CE0020EB29 /* NodNotificationController.m */; };
@@ -99,6 +100,8 @@
 		6A5FE4FD1B2A2C15006DAFE8 /* NodMainInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodMainInterfaceController.m; sourceTree = "<group>"; };
 		6A5FE4FF1B2A2C24006DAFE8 /* NodResponseInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodResponseInterfaceController.h; sourceTree = "<group>"; };
 		6A5FE5001B2A2C24006DAFE8 /* NodResponseInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodResponseInterfaceController.m; sourceTree = "<group>"; };
+		6A6CBED21B2CD8BD002C1226 /* SendingNodInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendingNodInterfaceController.h; sourceTree = "<group>"; };
+		6A6CBED31B2CD8BD002C1226 /* SendingNodInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendingNodInterfaceController.m; sourceTree = "<group>"; };
 		6A97A4CA1B2A4A5E00F85550 /* NodMessageInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodMessageInterfaceController.h; sourceTree = "<group>"; };
 		6A97A4CB1B2A4A5E00F85550 /* NodMessageInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodMessageInterfaceController.m; sourceTree = "<group>"; };
 		6AB9301B1B2A53260020EB29 /* NodMessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodMessageTableViewController.h; sourceTree = "<group>"; };
@@ -128,14 +131,13 @@
 		6A053D3B1B2A36A8006337E1 /* Interface Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6A6CBED81B2CD917002C1226 /* Nod Sending Interface Controllers */,
 				6A5FE4FC1B2A2C15006DAFE8 /* NodMainInterfaceController.h */,
 				6A5FE4FD1B2A2C15006DAFE8 /* NodMainInterfaceController.m */,
 				6A97A4CA1B2A4A5E00F85550 /* NodMessageInterfaceController.h */,
 				6A97A4CB1B2A4A5E00F85550 /* NodMessageInterfaceController.m */,
 				6A5FE4FF1B2A2C24006DAFE8 /* NodResponseInterfaceController.h */,
 				6A5FE5001B2A2C24006DAFE8 /* NodResponseInterfaceController.m */,
-				6A0AFF931B2CA96A00F7F8F5 /* SendNodInterfaceController.h */,
-				6A0AFF941B2CA96A00F7F8F5 /* SendNodInterfaceController.m */,
 				6AB9301E1B2A66CE0020EB29 /* NodNotificationController.h */,
 				6AB9301F1B2A66CE0020EB29 /* NodNotificationController.m */,
 				6A5FE4E31B2A2B24006DAFE8 /* GlanceController.h */,
@@ -227,6 +229,17 @@
 				6A5FE4D91B2A2B24006DAFE8 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A6CBED81B2CD917002C1226 /* Nod Sending Interface Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A0AFF931B2CA96A00F7F8F5 /* SendNodInterfaceController.h */,
+				6A0AFF941B2CA96A00F7F8F5 /* SendNodInterfaceController.m */,
+				6A6CBED21B2CD8BD002C1226 /* SendingNodInterfaceController.h */,
+				6A6CBED31B2CD8BD002C1226 /* SendingNodInterfaceController.m */,
+			);
+			name = "Nod Sending Interface Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +391,7 @@
 				6A053D491B2A3848006337E1 /* CustomTableRow.m in Sources */,
 				6A5FE4E51B2A2B24006DAFE8 /* GlanceController.m in Sources */,
 				6A0AFF951B2CA96A00F7F8F5 /* SendNodInterfaceController.m in Sources */,
+				6A6CBED41B2CD8BD002C1226 /* SendingNodInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
