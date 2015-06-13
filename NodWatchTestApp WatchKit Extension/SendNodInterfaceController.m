@@ -11,6 +11,7 @@
 
 @interface SendNodInterfaceController ()
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceTable *nodTable;
+@property (strong, nonatomic) NSDictionary *userData;
 @end
 
 @implementation SendNodInterfaceController
@@ -27,18 +28,15 @@
 - (void)loadTableData {
     [self.nodTable setNumberOfRows:6 withRowType:@"NodTableRow"];
     
-    NodTableRow *row0 = [self.nodTable rowControllerAtIndex:0];
-    [row0.nodImage setImageNamed:@"FacePalm"];
-    NodTableRow *row1 = [self.nodTable rowControllerAtIndex:1];
-    [row1.nodImage setImageNamed:@"LOL"];
-    NodTableRow *row2 = [self.nodTable rowControllerAtIndex:2];
-    [row2.nodImage setImageNamed:@"Thinking"];
-    NodTableRow *row3 = [self.nodTable rowControllerAtIndex:3];
-    [row3.nodImage setImageNamed:@"Tongue"];
-    NodTableRow *row4 = [self.nodTable rowControllerAtIndex:4];
-    [row4.nodImage setImageNamed:@"Wink"];
-    NodTableRow *row5 = [self.nodTable rowControllerAtIndex:5];
-    [row5.nodImage setImageNamed:@"Worried"];
+    for (int i = 0; i < 6; i++) {
+        NodTableRow *tempRow = [self.nodTable rowControllerAtIndex:i];
+        [tempRow.nodImage setImageNamed:[NSString stringWithFormat:@"%d", i]];
+    }
+}
+
+- (NSDictionary *)getContextDictionaryFromRow:(int)row {
+    NSDictionary *context = @{ @"userId":@"", @"animationId":@"" };
+    return context;
 }
 
 // Segue

@@ -34,11 +34,6 @@
     [super didDeactivate];
 }
 
-- (void)handleActionWithIdentifier:(nullable NSString *)identifier forRemoteNotification:(nonnull NSDictionary *)remoteNotification {
-    NSLog(@"button was pressed");
-}
-
-/*
 - (void)didReceiveLocalNotification:(UILocalNotification *)localNotification withCompletion:(void (^)(WKUserNotificationInterfaceType))completionHandler {
     // This method is called when a local notification needs to be presented.
     // Implement it if you use a dynamic notification interface.
@@ -47,7 +42,7 @@
     // After populating your dynamic notification interface call the completion block.
     completionHandler(WKUserNotificationInterfaceTypeCustom);
 }
-*/
+
 
 
 - (void)didReceiveRemoteNotification:(NSDictionary *)remoteNotification withCompletion:(void (^)(WKUserNotificationInterfaceType))completionHandler {
@@ -56,6 +51,7 @@
     // Populate your dynamic notification interface as quickly as possible.
     //
     // After populating your dynamic notification interface call the completion block.
+    NSLog(@"message was received");
     completionHandler(WKUserNotificationInterfaceTypeCustom);
 }
 

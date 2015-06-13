@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="434" y="347"/>
         </scene>
-        <!--Nod Response Interface Controller-->
+        <!--NodResponseInterfaceController-->
         <scene sceneID="jMr-70-sof">
             <objects>
-                <controller hidesWhenLoading="NO" id="oxm-0f-k6I" customClass="NodResponseInterfaceController">
+                <controller identifier="NodResponseInterfaceController" hidesWhenLoading="NO" id="oxm-0f-k6I" customClass="NodResponseInterfaceController">
                     <items>
                         <label alignment="center" text="Send Message" id="T2m-fH-Uo3"/>
                         <button width="1" alignment="left" title="Text" id="afR-gp-4fX">

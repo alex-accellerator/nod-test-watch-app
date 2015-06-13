@@ -49,6 +49,12 @@
     return _messages;
 }
 
+- (void)handleActionWithIdentifier:(nullable NSString *)identifier forRemoteNotification:(nonnull NSDictionary *)remoteNotification {
+    // push to
+    NSLog(@"button was pressed");
+}
+
+
 // Segue
 - (id)contextForSegueWithIdentifier:(nonnull NSString *)segueIdentifier inTable:(nonnull WKInterfaceTable *)table rowIndex:(NSInteger)rowIndex {
     if ([segueIdentifier isEqualToString:@"MessageSegue"]) {

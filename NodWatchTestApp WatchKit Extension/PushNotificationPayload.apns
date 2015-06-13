@@ -2,15 +2,17 @@
     "aps": {
         "alert": {
             "body": "Test message",
-            "title": "Optional title"
+            "title": "Optional title",
+            "senderName": "Dude",
+            "senderId": "dude@jabbersomething.com"
         },
         "category": "myCategory"
     },
     
     "WatchKit Simulator Actions": [
-        {
-            "title": "Reply",
-            "identifier": "replyButtonAction"
+                                   {
+                                   "title": "Reply",
+                                   "identifier": "replyButtonAction"
         }
     ],
     
