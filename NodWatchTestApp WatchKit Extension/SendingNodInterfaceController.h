@@ -11,4 +11,8 @@
 
 @interface SendingNodInterfaceController : WKInterfaceController
 
+@property (nonatomic, strong) IBOutlet WKInterfaceLabel *sendingLabel;
+@property (nonatomic, strong) IBOutlet WKInterfaceImage *animationImage;
+
 @end
+
