@@ -1,9 +1,9 @@
 {
     "aps": {
         "alert": {
-            "body": "Test message",
+            "body": "What's up? I'm so bored right now. Let's get food.",
             "title": "Optional title",
-            "senderName": "Dude",
+            "senderName": "Somedude",
             "senderId": "dude@jabbersomething.com"
         },
         "category": "myCategory"

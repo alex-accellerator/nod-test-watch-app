@@ -95,7 +95,7 @@
                                             <imageView width="55" height="110" alignment="center" verticalAlignment="center" id="tX2-EJ-8ig"/>
                                         </items>
                                         <connections>
-                                            <segue destination="7wH-fX-54S" kind="modal" identifier="SendNodSegue" id="McK-0o-3kO"/>
+                                            <segue destination="7wH-fX-54S" kind="push" identifier="SendNodSegue" id="McK-0o-3kO"/>
                                         </connections>
                                     </group>
                                     <connections>
@@ -163,7 +163,16 @@
         <!--Nod Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
-                <controller id="gdX-wl-uQE" customClass="NodNotificationController"/>
+                <controller id="gdX-wl-uQE" customClass="NodNotificationController">
+                    <items>
+                        <label alignment="center" text="Label" textAlignment="center" id="Jf8-Rs-CN8"/>
+                        <label width="136" height="63" alignment="center" text="Label" textAlignment="left" numberOfLines="0" id="z3z-1M-Hsr"/>
+                    </items>
+                    <connections>
+                        <outlet property="messageLabel" destination="z3z-1M-Hsr" id="XRg-xy-1eh"/>
+                        <outlet property="nameLabel" destination="Jf8-Rs-CN8" id="skp-Hj-Ay7"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>

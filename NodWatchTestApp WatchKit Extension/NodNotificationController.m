@@ -9,7 +9,8 @@
 #import "NodNotificationController.h"
 
 @interface NodNotificationController ()
-
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *messageLabel;
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *nameLabel;
 @end
 
 @implementation NodNotificationController
@@ -51,7 +52,10 @@
     // Populate your dynamic notification interface as quickly as possible.
     //
     // After populating your dynamic notification interface call the completion block.
-    NSLog(@"message was received");
+    NSString *message = remoteNotification[@"aps"][@"alert"][@"body"];
+    NSString *name = remoteNotification[@"aps"][@"alert"][@"senderName"];
+    [self.nameLabel setText:name];
+    [self.messageLabel setText:message];
     completionHandler(WKUserNotificationInterfaceTypeCustom);
 }
 

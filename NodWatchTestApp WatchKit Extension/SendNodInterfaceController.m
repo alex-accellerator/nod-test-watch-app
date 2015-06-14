@@ -37,14 +37,14 @@
 }
 
 - (NSDictionary *)getContextDictionaryFromRow:(int)row {
-    NSDictionary *context = @{ @"userId":@"", @"animationId":@"" };
+    NSDictionary *context = @{ @"userId": self.remoteNotification[@"aps"][@"alert"][@"senderId"], @"animationId": [NSString stringWithFormat:@"%i", row] };
     return context;
 }
 
 // Segue
 - (id)contextForSegueWithIdentifier:(nonnull NSString *)segueIdentifier inTable:(nonnull WKInterfaceTable *)table rowIndex:(NSInteger)rowIndex {
     if ([segueIdentifier isEqualToString:@"SendNodSegue"]) {
-        return nil;
+        return [self getContextDictionaryFromRow:rowIndex];
     }
     
     return nil;

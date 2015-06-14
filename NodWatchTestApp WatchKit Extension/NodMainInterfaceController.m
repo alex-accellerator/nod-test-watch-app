@@ -18,6 +18,10 @@
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
+}
+
+- (void)willActivate {
+    [super willActivate];
     [self loadTableData];
 }
 
