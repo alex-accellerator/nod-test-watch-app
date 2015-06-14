@@ -12,6 +12,7 @@
 @interface SendNodInterfaceController ()
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceTable *nodTable;
 @property (strong, nonatomic) NSDictionary *userData;
+@property (strong, nonatomic) NSDictionary *remoteNotification;
 @end
 
 @implementation SendNodInterfaceController
@@ -19,6 +20,7 @@
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
     [self loadTableData];
+    self.remoteNotification = context;
 }
 
 - (void)willActivate {

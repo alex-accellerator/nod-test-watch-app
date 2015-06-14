@@ -50,8 +50,8 @@
 }
 
 - (void)handleActionWithIdentifier:(nullable NSString *)identifier forRemoteNotification:(nonnull NSDictionary *)remoteNotification {
-    // push to
-    NSLog(@"button was pressed");
+    // push to NodResponseInterfaceController
+    [self pushControllerWithName:@"NodResponseInterfaceController" context:remoteNotification];
 }
 
 

@@ -10,9 +10,9 @@
     },
     
     "WatchKit Simulator Actions": [
-                                   {
-                                   "title": "Reply",
-                                   "identifier": "replyButtonAction"
+        {
+            "title": "Reply",
+            "identifier": "replyButtonAction"
         }
     ],
     

@@ -67,6 +67,15 @@
     return @{ @"name": self.messageDictionary[@"name"] , @"message": response };
 }
 
+// Segue
+- (id)contextForSegueWithIdentifier:(nonnull NSString *)segueIdentifier {
+    if ([segueIdentifier isEqualToString:@"RespondWithNodSegue"]) {
+        return self.messageDictionary;
+    }
+    
+    return nil;
+}
+
 @end
 
 
